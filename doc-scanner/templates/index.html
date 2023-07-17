@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>SMART FILE READER</h1>
+            <div class="drop_box">
+                <header>
+                    <h3>Upload and ask your question from the file</h3>
+                </header>
+                <p>Files Supported: PDF, TEXT, DOCX , PNG, JPEG, BMP, GIF</p>
+
+                <form class="form" action="/uploader" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" />
+                    <br />
+                    <label for="question">Ask Your Question:</label>
+                    <textarea type="text" name="question" id="question" style="width: 576px; height: 99px;" required> </textarea>
+                    <br />
+                    <button class="btn">Find the answer</button>
+                </form>
+
+
+                <br>
+
+            </div>
+
+        </div>
+    </div>
+    {% if answer %}
+    <div class="answer-container ">
+        <div class="card">
+
+            <div class="answer">
+                <h3>Answer:</h3>
+                <p>{{ answer }}</p>
+            </div>
+
+        </div>
+    </div>
+    {% endif %}
+</body>
+
+</html>

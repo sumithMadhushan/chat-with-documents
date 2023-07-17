@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="drop_box">
+                <header>
+                    <h3>Ask your question from the file</h3>
+                </header>
+                <form class="form" action="/uploader" method="POST" enctype="multipart/form-data">
+                    <div class="form">
+                        {% if uploadedFileName %}
+                        <h4>{{uploadedFileName}}</h4>
+                        {% endif %}
+                       
+                        <textarea type="text" name="question" id="question" style="width: 576px; height: 99px;"
+                                  placeholder="Type your questions for this file" required> </textarea>
+                        <br />
+                        <button class="btn">Ask Anything</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% if answer %}
+    <div class="answer-container ">
+        <div class="card">
+
+            <div class="answer">
+                <h3>Answer:</h3>
+                <p>{{ answer }}</p>
+            </div>
+
+        </div>
+    </div>
+    {% endif %}
+</body>
+</html>
