@@ -25,7 +25,7 @@ These models aren't here just for show. Hugging Face's Transformer library lets 
 # Steps to use
 1. Clone the repo
 
-2. Make sure you have latest pythin installed in your environemnt 
+2. Make sure you have latest python installed in your environemnt 
 3. Downlaod & install the tesseract from here: https://tesseract-ocr.github.io/tessdoc/Downloads.html
 
 We're using tesseract as our image processing ocr  - Read more: https://github.com/tesseract-ocr/tesseract 
