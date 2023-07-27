@@ -1,0 +1,47 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>dcd1f54a-b00f-44f3-858a-c7c4bb4683a4</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>2-large-scale-data-analysis\5-Spacy-combining-predictions-and-rules.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>SpacySample</Name>
+    <RootNamespace>SpacySample</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="1-basic-text-processing\2-Spacy-Predicting-Named-Entities.py" />
+    <Compile Include="1-basic-text-processing\3-Spacy-Rule-Based-Matching.py" />
+    <Compile Include="1-basic-text-processing\4-Spacy-Text-Categorise.py" />
+    <Compile Include="1-basic-text-processing\1-Spacy-Lexical-attributes.py" />
+    <Compile Include="2-large-scale-data-analysis\5-Spacy-combining-predictions-and-rules.py" />
+    <Compile Include="2-large-scale-data-analysis\4-Spacy-word-vectors-and-semantic-similarity.py" />
+    <Compile Include="2-large-scale-data-analysis\3-Spacy-data-structures-best-practice.py" />
+    <Compile Include="2-large-scale-data-analysis\2-Spacy-data-structures2.py" />
+    <Compile Include="2-large-scale-data-analysis\1-Spacy-data-structures1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1-basic-text-processing\" />
+    <Folder Include="2-large-scale-data-analysis\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "doc-scanner", "doc-scanner\doc-scanner.pyproj", "{53F52F74-CF85-42BF-A458-C0121065D607}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SpacySample", "SpacySample\SpacySample.pyproj", "{DCD1F54A-B00F-44F3-858A-C7C4BB4683A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{53F52F74-CF85-42BF-A458-C0121065D607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F52F74-CF85-42BF-A458-C0121065D607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F52F74-CF85-42BF-A458-C0121065D607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD1F54A-B00F-44F3-858A-C7C4BB4683A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD1F54A-B00F-44F3-858A-C7C4BB4683A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
